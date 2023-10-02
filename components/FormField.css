@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div.formInputField > input,
+div.formSelectField > select {
+  @apply block w-full rounded border border-black p-2;
+}

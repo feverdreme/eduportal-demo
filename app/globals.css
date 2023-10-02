@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-rgb: #6eeb83;
+  --foreground-rgb: #ffffff;
+  --accent: #1be7ff;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+body,
+.background {
+  background-color: var(--background-rgb);
+}
+
+p {
+  @apply text-base;
+}
+
+.foreground {
+  background-color: var(--foreground-rgb);
+}
+
+.accent {
+  border-color: var(--accent);
+}
